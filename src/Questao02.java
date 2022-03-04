@@ -1,10 +1,21 @@
+import java.util.Scanner;
 
 public class Questao02 {
     public static void main(String[] args) {
+        // Cria um objeto "sc" do tipo Scanner para entrada de dados.
+        Scanner sc = new Scanner(System.in);
 
-        int[] vetor = {1,5,3,4,2,6}; // Criação do vetor.
+        int[] vetor = new int[5]; // Criação do vetor.
+
+        // Preenche o vetor com os valores de entrada
+        for(int i = 0; i < 5; i++){
+            System.out.print("Digite um valor para a posição " + i + " do vetor: ");
+            vetor[i] = sc.nextInt();
+        }
+
         int cont = 0; // Contador que irá armazenar o número de elementos pares do vetor que tem uma diferença igual ao valor de x.
-        int x = 2; // Um inteiro qualquer x.
+        System.out.print("Digite um valor para x: ");
+        int x = sc.nextInt(); // Recebe um valor para x.
 
         // Cada valor do vetor será comparado com todos os valores a sua frente no intuito de encontrar os pares
         // de valores cujo a diferença é igual a "x".
@@ -15,6 +26,6 @@ public class Questao02 {
                 }
             }
         }
-        System.out.println(cont); // Imprime o valor do contador.
+        System.out.println("\nResultado: " + cont); // Imprime o valor do contador.
     }
 }

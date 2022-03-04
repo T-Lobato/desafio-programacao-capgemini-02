@@ -6,6 +6,7 @@ public class Questao03 {
         Scanner sc = new Scanner(System.in);
 
         // Entrada de dados.
+        System.out.print("Digite uma frase: ");
         String frase = sc.nextLine();
 
         // Remove os espaços da frase com método split e junta novamente a frase com o método join.
@@ -28,6 +29,7 @@ public class Questao03 {
 
         // for usado para encriptar a frase com base nos critérios estabelecidos no exercício.
         // Basicamente a matriz será printada na tela coluna a coluna.
+        System.out.print("Frase encriptada: ");
         for(int i = 0; i < t; i++) {
             for(int j = 0; j < t; j++) {
                 if(grid[j][i] != null)
