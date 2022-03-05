@@ -5,7 +5,7 @@ public class Questao01 {
         // Cria um objeto "sc" do tipo Scanner para entrada de dados.
         Scanner sc = new Scanner(System.in);
 
-        // Cria uma lista de valores inteiros.
+        //  Cria uma lista de valores inteiros.
         List<Integer> lista = new ArrayList<>();
 
         // Preenche a lista com os valores de entrada.
@@ -25,5 +25,5 @@ public class Questao01 {
 
         // Imprime o valor central da lista utilizando a variavel mediana como indíce.
         System.out.println("Mediana = " + lista.get(mediana));
-    }
+   }
 }
